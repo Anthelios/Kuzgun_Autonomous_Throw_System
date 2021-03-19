@@ -1,14 +1,9 @@
 import numpy as np
 import time
 import RPi.GPIO as GPIO
-import dronekit_sitl as planesim
 from dronekit import connect, VehicleMode
 
-print "Simulator baslatiliyor..."
-sitl = planesim.start_default()
-sitl.launch
-
-print "%s uzerinden araca baglaniliyor... " % ('127.0.0.1:14550')
+print "Connecting to vehicle via %s" % ('127.0.0.1:14551') # The GPIO pin to be connected to the vehicle should be written.
 plane = connect('127.0.0.1:14551', wait_ready=True)
 R=6371 # The radius of world
 

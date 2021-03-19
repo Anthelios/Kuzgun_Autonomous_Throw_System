@@ -1,5 +1,3 @@
-#This code created by Lutfi Emre Askin in 09.08.2020
-
 import numpy as np
 import time
 import RPi.GPIO as GPIO
